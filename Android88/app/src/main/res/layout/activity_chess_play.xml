@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChessPlay">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <GridLayout
+                android:id="@+id/boardGrid"
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:layout_margin="20sp"
+                android:layout_marginTop="68dp"
+                android:columnCount="8"
+                android:rowCount="8">
+
+                <TextView
+                    android:id="@+id/board07"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board17"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board27"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board37"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board47"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board57"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board67"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board77"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+                /////////////////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/board06"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board16"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board26"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board36"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board46"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board56"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board66"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board76"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+                ///////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/board05"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board15"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board25"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board35"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board45"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board55"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board65"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board75"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+                ///////////////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/board04"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board14"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board24"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board34"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board44"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board54"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board64"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board74"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+                //////////////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/board03"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board13"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board23"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board33"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board43"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board53"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board63"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board73"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+                ////////////////////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/board02"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board12"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board22"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board32"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board42"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board52"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board62"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board72"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+                /////////////////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/board01"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board11"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board21"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board31"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board41"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board51"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board61"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board71"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+                ////////////////////////////////////////////////////////////
+
+                <TextView
+                    android:id="@+id/board00"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board10"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board20"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board30"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board40"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board50"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board60"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorLight"
+                    android:onClick="onGridClick" />
+
+                <TextView
+                    android:id="@+id/board70"
+                    android:layout_width="@dimen/width"
+                    android:layout_height="@dimen/length"
+                    android:background="@color/boardColorDark"
+                    android:onClick="onGridClick" />
+
+
+            </GridLayout>
+
+            <Button
+                android:id="@+id/startGameButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Start Game" />
+
+            <TextView
+                android:id="@+id/PlayerMoveText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Which Player's Move" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonDraw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Draw" />
+
+                <Button
+                    android:id="@+id/buttonResign"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Resign" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonAIMove"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="AI Move" />
+
+                <Button
+                    android:id="@+id/buttonUndo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Undo" />
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="201dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="Enter Replay Name:" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/saveReplayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:text="Save Replay" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
